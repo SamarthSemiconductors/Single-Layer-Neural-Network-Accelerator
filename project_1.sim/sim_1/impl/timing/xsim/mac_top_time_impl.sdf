@@ -1,0 +1,298 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "mac_top")
+(DATE "Thu Mar  6 13:28:35 2025")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2024.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE btn0_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1396.4:1466.8:1466.8) (1396.4:1466.8:1466.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE clk_IBUF_BUFG_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (91.0:96.0:96.0) (91.0:96.0:96.0))
+    )
+  )
+    (TIMINGCHECK
+      (PERIOD (posedge I) (2155.2:2155.2:2155.2))
+      (PERIOD (negedge I) (2155.2:2155.2:2155.2))
+    )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE clk_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1418.3:1488.9:1488.9) (1418.3:1488.9:1488.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[0\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3322.3:3524.4:3524.4) (3322.3:3524.4:3524.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[1\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3304.4:3506.4:3506.4) (3304.4:3506.4:3506.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[2\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3342.6:3545.0:3545.0) (3342.6:3545.0:3545.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[3\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3336.1:3538.4:3538.4) (3336.1:3538.4:3538.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE mac/result\[4\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDCE")
+  (INSTANCE mac/result_reg\[1\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge CLR) Q (616.0:764.0:764.0))
+      (IOPATH C Q (244.0:303.0:303.0) (244.0:303.0:303.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (RECREM (negedge CLR) (posedge C) (326.0:404.0:404.0) (-248.0:-248.0:-248.0))
+      (SETUPHOLD (posedge D) (posedge C) (-57.0:-46.0:-46.0) (225.0:225.0:225.0))
+      (SETUPHOLD (negedge D) (posedge C) (-57.0:-46.0:-46.0) (225.0:225.0:225.0))
+      (PERIOD (posedge C) (870.0:1000.0:1000.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+      (WIDTH (negedge C) (435.0:500.0:500.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDCE")
+  (INSTANCE mac/result_reg\[3\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge CLR) Q (662.0:821.0:821.0))
+      (IOPATH C Q (274.0:340.0:340.0) (274.0:340.0:340.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (RECREM (negedge CLR) (posedge C) (326.0:404.0:404.0) (-248.0:-248.0:-248.0))
+      (SETUPHOLD (posedge D) (posedge C) (-55.0:-45.0:-45.0) (241.0:241.0:241.0))
+      (SETUPHOLD (negedge D) (posedge C) (-55.0:-45.0:-45.0) (241.0:241.0:241.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDCE")
+  (INSTANCE mac/result_reg\[4\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge CLR) Q (662.0:821.0:821.0))
+      (IOPATH C Q (274.0:340.0:340.0) (274.0:340.0:340.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (RECREM (negedge CLR) (posedge C) (326.0:404.0:404.0) (-248.0:-248.0:-248.0))
+      (SETUPHOLD (posedge D) (posedge C) (-55.0:-45.0:-45.0) (241.0:241.0:241.0))
+      (SETUPHOLD (negedge D) (posedge C) (-55.0:-45.0:-45.0) (241.0:241.0:241.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE mac/y1_carry_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (122.0:152.0:152.0) (122.0:152.0:152.0))
+      (IOPATH I0 O (122.0:152.0:152.0) (122.0:152.0:152.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE mac/y1_carry_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (122.0:152.0:152.0) (122.0:152.0:152.0))
+      (IOPATH I0 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE mac/y1_carry_i_3)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE mac/y1_carry_i_4)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE mac/y1_carry_i_5)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE sig/led_OBUF\[0\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (122.0:152.0:152.0) (122.0:152.0:152.0))
+      (IOPATH I2 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+      (IOPATH I1 O (122.0:152.0:152.0) (122.0:152.0:152.0))
+      (IOPATH I0 O (95.0:118.0:118.0) (95.0:118.0:118.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE sig/led_OBUF\[3\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "CARRY4")
+  (INSTANCE sig/y1_carry)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH S[2] CO[2] (222.0:292.0:292.0) (222.0:292.0:292.0))
+      (IOPATH S[1] CO[2] (417.0:548.0:548.0) (417.0:548.0:548.0))
+      (IOPATH S[0] CO[2] (389.0:512.0:512.0) (389.0:512.0:512.0))
+      (IOPATH DI[2] CO[2] (287.0:356.0:356.0) (287.0:356.0:356.0))
+      (IOPATH DI[1] CO[2] (349.0:459.0:459.0) (349.0:459.0:459.0))
+      (IOPATH DI[0] CO[2] (360.0:474.0:474.0) (360.0:474.0:474.0))
+      (IOPATH CYINIT CO[2] (477.0:592.0:592.0) (477.0:592.0:592.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw0_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1469.8:1540.9:1540.9) (1469.8:1540.9:1540.9))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "mac_top")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT btn0_IBUF_inst/O mac/result_reg\[1\]/CLR (2598.2:3046.2:3046.2) (2598.2:3046.2:3046.2))
+      (INTERCONNECT btn0_IBUF_inst/O mac/result_reg\[3\]/CLR (2598.2:3046.2:3046.2) (2598.2:3046.2:3046.2))
+      (INTERCONNECT btn0_IBUF_inst/O mac/result_reg\[4\]/CLR (2598.2:3046.2:3046.2) (2598.2:3046.2:3046.2))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O mac/result_reg\[1\]/C (1593.7:1735.0:1735.0) (1593.7:1735.0:1735.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O mac/result_reg\[3\]/C (1593.7:1735.0:1735.0) (1593.7:1735.0:1735.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O mac/result_reg\[4\]/C (1593.7:1735.0:1735.0) (1593.7:1735.0:1735.0))
+      (INTERCONNECT clk_IBUF_inst/O clk_IBUF_BUFG_inst/I (1862.0:1966.5:1966.5) (1862.0:1966.5:1966.5))
+      (INTERCONNECT mac/result\[4\]_i_1/O mac/result_reg\[4\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT mac/result_reg\[1\]/Q sig/led_OBUF\[0\]_inst_i_1/I3 (947.9:1152.9:1152.9) (947.9:1152.9:1152.9))
+      (INTERCONNECT mac/result_reg\[1\]/Q sig/led_OBUF\[3\]_inst_i_1/I3 (947.9:1152.9:1152.9) (947.9:1152.9:1152.9))
+      (INTERCONNECT mac/result_reg\[1\]/Q mac/y1_carry_i_2/I1 (830.9:1012.9:1012.9) (830.9:1012.9:1012.9))
+      (INTERCONNECT mac/result_reg\[1\]/Q mac/y1_carry_i_5/I1 (830.9:1012.9:1012.9) (830.9:1012.9:1012.9))
+      (INTERCONNECT mac/result_reg\[3\]/Q sig/led_OBUF\[0\]_inst_i_1/I1 (780.9:948.9:948.9) (780.9:948.9:948.9))
+      (INTERCONNECT mac/result_reg\[3\]/Q sig/led_OBUF\[3\]_inst_i_1/I1 (780.9:948.9:948.9) (780.9:948.9:948.9))
+      (INTERCONNECT mac/result_reg\[3\]/Q mac/y1_carry_i_4/I0 (666.6:811.6:811.6) (666.6:811.6:811.6))
+      (INTERCONNECT mac/result_reg\[3\]/Q mac/y1_carry_i_1/I1 (666.6:811.6:811.6) (666.6:811.6:811.6))
+      (INTERCONNECT mac/result_reg\[4\]/Q sig/y1_carry/DI[2] (452.0:537.0:537.0) (452.0:537.0:537.0))
+      (INTERCONNECT mac/result_reg\[4\]/Q sig/led_OBUF\[0\]_inst_i_1/I2 (644.9:769.9:769.9) (644.9:769.9:769.9))
+      (INTERCONNECT mac/result_reg\[4\]/Q sig/led_OBUF\[3\]_inst_i_1/I2 (644.9:769.9:769.9) (644.9:769.9:769.9))
+      (INTERCONNECT mac/result_reg\[4\]/Q mac/y1_carry_i_1/I0 (567.8:682.8:682.8) (567.8:682.8:682.8))
+      (INTERCONNECT mac/result_reg\[4\]/Q mac/y1_carry_i_2/I0 (577.8:690.8:690.8) (577.8:690.8:690.8))
+      (INTERCONNECT mac/result_reg\[4\]/Q mac/y1_carry_i_3/I0 (707.5:854.5:854.5) (707.5:854.5:854.5))
+      (INTERCONNECT mac/result_reg\[4\]/Q mac/y1_carry_i_5/I0 (577.8:690.8:690.8) (577.8:690.8:690.8))
+      (INTERCONNECT mac/result_reg\[4\]/Q mac/y1_carry_i_4/I1 (567.8:682.8:682.8) (567.8:682.8:682.8))
+      (INTERCONNECT mac/y1_carry_i_1/O sig/y1_carry/DI[1] (22.0:27.0:27.0) (22.0:27.0:27.0))
+      (INTERCONNECT mac/y1_carry_i_2/O sig/y1_carry/DI[0] (22.0:27.0:27.0) (22.0:27.0:27.0))
+      (INTERCONNECT mac/y1_carry_i_3/O sig/y1_carry/S[2] (18.0:22.0:22.0) (18.0:22.0:22.0))
+      (INTERCONNECT mac/y1_carry_i_4/O sig/y1_carry/S[1] (18.0:22.0:22.0) (18.0:22.0:22.0))
+      (INTERCONNECT mac/y1_carry_i_5/O sig/y1_carry/S[0] (19.0:24.0:24.0) (19.0:24.0:24.0))
+      (INTERCONNECT sig/led_OBUF\[0\]_inst_i_1/O led_OBUF\[0\]_inst/I (3854.6:4482.6:4482.6) (3854.6:4482.6:4482.6))
+      (INTERCONNECT sig/led_OBUF\[3\]_inst_i_1/O led_OBUF\[2\]_inst/I (3119.0:3685.0:3685.0) (3119.0:3685.0:3685.0))
+      (INTERCONNECT sig/led_OBUF\[3\]_inst_i_1/O led_OBUF\[3\]_inst/I (2991.1:3533.1:3533.1) (2991.1:3533.1:3533.1))
+      (INTERCONNECT sig/y1_carry/CO[2] sig/led_OBUF\[0\]_inst_i_1/I0 (504.3:609.3:609.3) (504.3:609.3:609.3))
+      (INTERCONNECT sig/y1_carry/CO[2] sig/led_OBUF\[3\]_inst_i_1/I0 (504.3:609.3:609.3) (504.3:609.3:609.3))
+      (INTERCONNECT sw0_IBUF_inst/O mac/result_reg\[3\]/D (2072.8:2447.8:2447.8) (2072.8:2447.8:2447.8))
+      (INTERCONNECT sw0_IBUF_inst/O mac/result\[4\]_i_1/I0 (2101.9:2482.9:2482.9) (2101.9:2482.9:2482.9))
+      )
+    )
+)
+)
